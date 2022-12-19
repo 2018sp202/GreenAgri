@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+.about_section{
+   background-color: whitesmoke;
+    background-size:cover ;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    padding: 2rem 2;
+    height: 70vh;
+}
+.about_section p{
+    color:black;
+    
+}
+.about_section button{
+
+    background: #29f700;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 30px;
+    margin-right:10px;
+}
+.about_section button:hover{
+    background: green;
+
+}
+.image{
+    height: 65vh;
+    width: 580px;
+}
+a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    font-size: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+font-style: italic;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    background: #29f700;;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+   
+  }
+  .abouttext{
+    margin-bottom: 10rem;
+    font-style: italic;
+    
+    font-size: 16px;
+  }

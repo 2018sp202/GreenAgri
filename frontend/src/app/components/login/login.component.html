@@ -1,0 +1,30 @@
+<body>
+ 
+	
+	
+
+<div class="wrapper">
+	<div class="logo">
+		<img src="https://cdn-icons-png.flaticon.com/512/1177/1177568.png" alt="">
+	</div>
+	<div class="text-center mt-4 name">
+		Sign In
+	</div>
+	<form #loginForm="ngForm" (ngSubmit)="submitLogin()"   class="p-3 mt-3">
+		<div class="alert alert.danger" style="color:red" [hidden]="!error">
+		  {{error}}
+		</div>
+	
+		<div class="form-field d-flex align-items-center">
+			<span class="far fa-user"></span>
+			<input type="email" id="typeEmailX"  name="email" [(ngModel)]="form.email"  placeholder="Email" required/>
+		</div>
+		<div class="form-field d-flex align-items-center">
+			<span class="fas fa-key"></span>
+			<input type="password" id="typePasswordX"   name="password" [(ngModel)]="form.password"   placeholder="Password" required/>
+		</div>
+		<button class="btn mt-3" [disabled]="!loginForm.valid">Login</button>
+	</form>
+	
+</div>
+</body>

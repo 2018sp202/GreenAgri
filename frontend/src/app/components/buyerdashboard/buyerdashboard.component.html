@@ -1,0 +1,99 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+ 
+  <div class="navbar navbar-dark bg-green shadow-sm">
+    <div class="navbar-brand align-item-center d-flex">
+       
+        
+            
+    <div class="form-group">
+      <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)"  placeholder="search products">
+
+  <span class="fas fa-search search-icon"></span>
+</div>
+      
+      <div>
+        <a mat-list-item routerLink="/winner" class="winner"><mat-icon>business_center</mat-icon></a>
+    </div>
+      
+      <button  class = "btt">
+        <i style="font-size:10px;" class="fas fa-cart-plus"></i>
+        <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+      </button>
+   
+    </div>
+  </div>
+
+
+  <div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filter('')">
+                <img src="https://thumbs.dreamstime.com/z/happy-farmer-holding-wicker-basket-full-fresh-fruits-agriculture-farm-harvest-concept-happy-farmer-holding-wicker-basket-full-118282746.jpg" alt="">
+                <h6>All products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Vegetable')">
+                <img style="width: 64px; margin-top: 5px;" src="https://cdn.vectorstock.com/i/1000x1000/30/77/happy-farmer-holding-wicker-basket-with-vegetables-vector-21223077.webp" alt="">
+                <h6>Vegetables</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Fruit')">
+                <img style="width: 64px; margin-top: 5px;"src="https://cdn.vectorstock.com/i/1000x1000/56/66/women-farmer-and-basket-of-fruits-vector-21245666.webp" alt="">
+                <h6>Fruits</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Yam')">
+                <img style="width: 100px; margin-top: 5px;" src="https://media.istockphoto.com/photos/yams-in-basket-picture-id494034891?s=612x612" alt="">
+                <h6>Yams</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('Cereal')">
+                <img style="width: 64px; margin-top: 5px;" src="https://cdn.yamatoscale.com/wp-content/uploads/2016/04/Cereals_Slider_01_00_OH.jpg" alt="">
+                <h6>Cereals</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+  
+
+<div class="container">
+    <div class="row">
+        <ng-container  *ngFor="let item of filterCategory  | filter:searchKey:'veh_name'">
+            <div class="card col-md-3">
+               <td><img src="http://localhost:8000/public/Image/{{item.veh_img}}"></td>
+                
+               <p><strong>Name:{{item.veh_name}}</strong></p>
+                    <p><strong>AvailableQuntity:{{item.availablequantity}}Kg</strong></p>
+                    <p><strong>ProducedMethode:{{item.producedmethode}}</strong></p>
+               <p><strong>Price:Rs.{{item.baseprice}}</strong></p>
+               <p><strong>category:{{item.producttype}}</strong></p>
+              
+              
+                <button  (click)= "goEdit(item.id)" class="btn btn-primary"  >Take bid</button>
+            </div>
+
+           
+
+            
+        </ng-container>
+
+    </div>
+</div>
+
+
+  
+         
+            
+  
+  
+  

@@ -1,0 +1,87 @@
+.example-container {
+  
+  width: 85%;
+  height: 95%;
+  margin-bottom: 100px;
+  margin-left: 100px;
+  
+  
+}
+
+body{
+  background-image:url('https://photomedia.in/wp-content/uploads/2021/05/dark-green-background-1024x576.jpg');
+ background-size: 100%;
+  background-size: cover;
+  height: 81%;
+  background-size: 100%;
+  background-position: top center;
+}
+.mat-drawer-container {
+ background-color:  rgb(255 255 255 / 30%);
+}
+.mat-drawer {
+  background-color: rgb(0 0 0 / 20%);
+  color: #fff;
+}
+.mat-icon {
+  color:black;
+}
+.mat-sidenav a:hover{
+  color: chartreuse;
+}
+
+.txt{
+  margin-left: 20px;
+}
+
+.mat-icon {
+  color:#e9ecef;
+}
+.mat-sidenav a:hover{
+  color: chartreuse;
+}
+
+
+
+.txt{
+  margin-left: 50px;
+}
+.img-fluid {
+  max-width: 35%;
+  height: auto;
+  margin-left: 42px;
+}
+.image{
+  height: 100px;
+  width: 150px;
+
+}
+.image2{
+  height: 550px;
+  width: 200px;
+
+}
+
+.card{
+  margin-left: 70px;
+  height: 15px;
+  width: 100px;
+  
+  
+}
+.card-title{
+  color: white;
+  font-weight: bold;
+  position: center;
+  font-size: 15px;
+  
+}
+.btt{
+  color: black;
+  margin-left: 50px;
+}
+.chart{
+  margin-top: 310px;
+  background:blue ;
+  
+}

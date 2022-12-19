@@ -1,0 +1,99 @@
+<body class="page_container">
+ 
+
+    <mat-sidenav-container class="example-container">
+        <mat-sidenav mode="side" opened>
+            <mat-nav-list style="width:200px">
+            
+                <img
+                src="https://static.vecteezy.com/system/resources/previews/004/716/341/original/agricultural-lender-gradient-icon-for-dark-theme-agricultural-loan-officer-expert-helping-farmers-get-credits-thin-line-color-symbol-modern-style-pictogram-isolated-outline-drawing-vector.jpg"
+                class="img-fluid rounded-circle"
+                alt=""
+                
+              />
+              <div class="txt">
+             <p style="color:#125926e6;"><strong> AgricultureOfficer</strong></p>
+              </div>
+             
+                <a mat-list-item  style="height: 70px;"><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+                    Dashboard</a>
+                <a mat-list-item routerLink="/viewrequest" style="height: 70px;"><mat-icon>help</mat-icon>Requests</a>
+                <a mat-list-item routerLink="/viewloan" style="height: 70px;"><mat-icon>monetization_on</mat-icon>Loan_Details</a>
+                <a mat-list-item routerLink="/viewrelief" style="height: 70px;"><mat-icon>card_giftcard</mat-icon>Relief fund_Details</a>
+                <a mat-list-item (click)='logout($event)' style="height: 70px;"><mat-icon>logout</mat-icon>Logout</a>
+            </mat-nav-list>
+   
+    </mat-sidenav>
+  <mat-sidenav-content>
+    <br>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="card" >
+            <img src="https://static.vecteezy.com/system/resources/previews/004/716/341/original/agricultural-lender-gradient-icon-for-dark-theme-agricultural-loan-officer-expert-helping-farmers-get-credits-thin-line-color-symbol-modern-style-pictogram-isolated-outline-drawing-vector.jpg" class="image" alt="Stony Beach"/>
+            <div class="card-img-overlay">
+              <h5 class="card-title">Loans</h5>
+              <button  class = "btt">
+                <i style="font-size:10px;" class="fas fa-cart-plus"></i>
+                <div style="font-size: 10px;" class="badge bg-danger">{{totalx}}</div>
+              </button>
+            </div>
+          </div>
+        </div>
+       
+      
+        <div class="col-lg-2">
+          <div class="card" >
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIRK0xlLP7EHYQT2s1tru5PD9ZgyaIdcQ-NbtyC-Ynl9BUJN4TrlZZKKzMq_RgBNEJS18&usqp=CAU" class="image"  alt="Stony Beach"/>
+            <div class="card-img-overlay">
+              <h5 class="card-title">Requests</h5>
+              <button  class = "btt">
+                <i style="font-size:10px;" class="fas fa-cart-plus"></i>
+                <div style="font-size: 10px;" class="badge bg-danger">{{totalxx}}</div>
+              </button>
+            </div>
+           
+          </div>
+        </div>
+      
+        
+      
+       
+        
+          <div class="card" >
+            <img src="https://thumbs.dreamstime.com/b/dollar-money-bag-hand-freshly-watered-potato-field-support-farming-loans-sowing-campaign-purchase-244951613.jpg" class="image" alt="Stony Beach"/>
+            <div class="card-img-overlay">
+              <h5 class="card-title">Relieffunds</h5>
+              <button  class = "btt">
+                <i style="font-size:10px;" class="fas fa-cart-plus"></i>
+                <div style="font-size: 10px;" class="badge bg-danger">{{total}}</div>
+              </button>
+            </div>
+           
+          </div>
+        </div>
+      
+      </div>
+         
+            
+        
+       
+          
+      
+
+  
+    
+  
+   
+      
+  
+  </mat-sidenav-content>
+        
+    </mat-sidenav-container>
+    
+    
+
+    </body>
+    
+    

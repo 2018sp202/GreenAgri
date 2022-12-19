@@ -1,0 +1,80 @@
+<section class="vh-100 bg-image">
+    <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+      <div class="container h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div class="card" style="border-radius: 15px;">
+              <div class="card-body p-5">
+                <h2 class="text-uppercase text-center mb-5"></h2>
+                <div *ngFor = "let sub of productList">
+                  <td><img src="http://localhost:8000/public/Image/{{sub.veh_img}}"></td> 
+                  <p><strong>Name:{{sub.veh_name}}</strong></p>
+                  <p><strong>AvailableQuantity:Rs.{{sub.availablequantity}}Kg</strong></p>
+                  <p><strong>ProducedMethode:{{sub.producedmethode}}</strong></p>
+                  <p><strong>Price:Rs.{{sub.baseprice}}</strong></p>
+                  <p><strong>category:{{sub.producttype}}</strong></p>
+                
+                
+                
+                <button (click)=pp(sub.enddate) class="btn btn-primary"  >Time</button>
+                 <div class="selling-left">
+                  <ul>
+                    <div *ngIf=  "days > -1" > 
+                    <li>
+                      
+                      <span class="count-date">{{days}}</span>
+                      <span class="count-day">Days</span>
+                      
+                    </li>
+                    <div *ngIf=  "hours > -1" > 
+                    <li>
+                      <span class="count-date">{{hours}}</span>
+                      <span class="count-day">Hours</span>
+                
+                    </li>
+                    <li>
+                      <span class="count-date">{{mins}}</span>
+                      <span class="count-day">Mins</span>
+                
+                    </li>
+                    <li>
+                      <span class="count-date">{{secs}}</span>
+                      <span class="count-day">Secs</span>
+                
+                    </li>
+                  </div>
+                </div>
+                  </ul>
+                </div>
+                
+              </div>
+              
+            
+              
+              </div>
+
+              <form #registrationForm="ngForm" (ngSubmit)="submitSignup()">
+              
+                <div class="row mb-3">
+                  <label for="inputRole3" class="col-sm-3 col-form-label">AuctionID</label>
+                  <div class="col-sm-10">
+                    <input type="number" class="form-control" id="inputRole3" value="sub.id" name="price" [(ngModel)]="form.auction_id" required>
+                  </div>
+                </div>
+              <div class="row mb-3">
+                <label for="inputRole3" class="col-sm-3 col-form-label">Price</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="inputRole3"  min = sub.baseprice name="price" [(ngModel)]="form.price" required>
+                </div>
+              </div>
+              <button   class="btn btn-primary"  >Take bid</button>
+              
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  

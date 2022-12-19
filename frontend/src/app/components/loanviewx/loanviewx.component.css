@@ -1,0 +1,97 @@
+.example-container {
+    width: 80%;
+    height: 100%;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    
+    
+  }
+  
+  body{
+    background-image:url('https://photomedia.in/wp-content/uploads/2021/05/dark-green-background-1024x576.jpg');
+   background-size: 100%;
+    background-size: cover;
+    height: 86%;
+    background-size: 100%;
+    background-position: top center;
+  }
+  .mat-drawer-container {
+   background-color:  rgb(255 255 255 / 30%);
+  }
+  .mat-drawer-content {
+    position: relative;
+    z-index: 1;
+    display: block;
+    height: 103%;
+  }
+  .mat-drawer {
+    background-color: rgb(0 0 0 / 50%);
+    color: #fff;
+  }
+  .mat-icon {
+    color:#e9ecef;
+  }
+  .mat-sidenav a:hover{
+    color: chartreuse;
+  }
+  
+  
+  
+  .txt{
+    margin-left: 50px;
+  
+  }
+  .txt1{
+    background-color: black;
+  }
+  .img-fluid {
+    max-width: 35%;
+    height: auto;
+    margin-left: 42px;
+  }
+  .container{   
+    margin: auto;
+  }
+  .page-top{
+    margin-top: -712px;
+    
+  }
+  
+  .pagination {
+    margin-left: 30%;
+    margin-top:10px;
+    position: relative;
+  }
+  
+  thead {
+    background-color: whitesmoke;
+    color: white;
+  } 
+  .form-control {
+    border-radius: 3px;
+    width: 360px;
+    margin-left: 20px;
+    
+  }
+  .table > :not(caption) > * > * {
+    background-color: rgb(23, 21, 21);
+    padding: 1.5;
+  }
+  .table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-accent-bg: green;
+    color: var(--bs-table-striped-color);
+  }
+  
+  .ngx-pagination .disabled {
+    padding: 0.1875rem 0.625rem;
+    color: black;
+    cursor: default;
+  }
+  .btn{
+  background-color: blue;
+  color: aliceblue;
+  }
+  .btn1{
+    background-color: red;
+    color: aliceblue;
+    }

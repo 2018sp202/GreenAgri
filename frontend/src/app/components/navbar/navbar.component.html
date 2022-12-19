@@ -1,0 +1,55 @@
+
+
+
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark " id="navbar">
+    <div class="container-fluid">
+      <img
+ src="..\assets\g.png"
+ class="img-fluid"
+ alt=""
+ 
+/>
+      <a class="navbar-brand" href="#">GreenAgri</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="aboutus">AboutUs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact">ContactUs</a>
+          </li>
+         
+         
+        </ul>
+          <div ngbDropdown class="dropdown">
+            
+            <button ngbDropdownToggle class="btn" >
+              Sign Up
+              </button>
+          
+            <ul ngbDropdownMenu aria-labelledby="dropdownMenuButton1">
+              <li><a ngbDropdownItem href="signup">Farmer</a></li>
+              <li><a ngbDropdownItem href="buyersignup">Buyer</a></li>
+              <li><a ngbDropdownItem href="aosignup">Agriculture Officer</a></li>
+            </ul>
+          </div>
+          <button class="btn"  (click)="btnClick();">Sign In</button>
+
+          <button class="btn"   (click)='logout($event)'>Logout</button>
+        
+        </div>
+    </div>
+  </nav>
+
+ 
+  

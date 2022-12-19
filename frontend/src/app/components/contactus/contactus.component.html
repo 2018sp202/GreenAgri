@@ -1,0 +1,102 @@
+<body>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+        <title>Sidebar template</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+     
+    
+    </head>
+    
+
+    <section class="about_section">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-lg-6 ">
+                <img class="image" src="https://i.pinimg.com/originals/83/3c/db/833cdbd5caf8f1ef752e98f3c3e50f48.jpg">
+            </div>
+            <div class="col-lg-6 footer_text1 ">
+                <div class="row">
+                    <div class="col-sm-12 bol" >
+                        <h1 class="footer_text4" >Contact Form</h1>
+                    </div>
+                    <div class="col-sm-6">                
+                        <form [formGroup]="contectForm" (ngSubmit)="save_contact(contectForm)">
+                        <div class="form-group">
+                            <label > Name</label>
+                            <input type="text" formControlName="name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label > E-Mail</label>
+                            <input type="text" formControlName="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label > Phone No</label>
+                            <input type="text" formControlName="phone_num" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label > Message</label>
+                           <textarea class="form-control"  formControlName="message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Posting Date </label>
+                           <input type="date" class="form-control" formControlName="Posting_date" >
+                         </div>
+                        <div class="form-group"><br>
+                            <button class="buttonx">Send</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="row">
+                <div class="col-lg-4 subscribe_box">
+                    <p class="footer_text"> welcome </p>
+                    <h3 class="footer_text" >For Latest Update Subscribe Now !</h3>
+                        <form [formGroup]="subscribeForm" (ngSubmit)="subscribe_now(subscribeForm)">
+                            <input type="email" class="form-control" formControlName="email" placeholder="E-Mail"/>
+                          <br>  <button class="btn btn-info">Subscribe</button>
+                        </form>
+                </div>
+                
+
+                <div class="col-lg-4">
+                    <h4 class="text-center mt-4 footer_text">Quick Links</h4>
+                    
+                        <a href="home">>home</a>
+                        <a href="aboutus">>Aboutus</a>
+                        <a href="buyerdashboard">>Auctions</a>
+                        
+                    
+                    </div>
+            
+                <div class="col-lg-2">
+                    <h4 class="text-center mt-3 footer_text">Contact Information</h4>
+                   <ul class="list-unstyled">
+                    <li> <a mat-list-item style="height: 50px;"><mat-icon>email</mat-icon><p class="footer_text5">greenagri@gmail.com</p></a></li>
+                    <li> <a mat-list-item style="height: 50px;"><mat-icon>call</mat-icon><p class="footer_text5">+940774567890</p></a></li>
+                    <li> <a mat-list-item style="height: 50px;"><mat-icon>home</mat-icon><p class="footer_text5">Jaffna</p></a></li>
+                    
+                   
+                   <img class="image1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK_QsZ_H12twXGG8TYIxNpIcm3Zx-O3yxjKA&usqp=CAU">
+                    </ul>
+                   
+
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+        
+</body>
+

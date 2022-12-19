@@ -1,0 +1,148 @@
+.form-control {
+    border-radius: 3px;
+    width: 600px;
+    margin-left: 20px;
+    
+}
+
+
+.menu-spacer {
+    flex: 1 1 auto;
+  
+  }
+  .btt{
+    color: black;
+    margin-left: -41px;
+    background-color: red;
+    height: 20px;
+    width: 20px;
+  }
+  .bg{
+    width: 100%;
+    height: 1%;
+    background: url('https://cdn.pixabay.com/photo/2018/01/19/09/26/field-3092043_1280.jpg') no-repeat center;
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  .card-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+}
+
+.item img {
+    width: 64px;
+}
+
+.item {
+    margin: 0px 15px;
+    text-align: center;
+}
+
+.item a:hover {
+    color: blue;
+}
+
+.card {
+    padding: 60px;
+    margin: 40px;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+.search-icon {
+    position: absolute;
+    z-index: 10;
+    right: 53%;
+    top: 23px;
+    color: green;
+}
+.winner{
+    height: 50px;
+    margin-left: 600px;
+    color: red;
+    
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 50px;
+}
+.form-control {
+    border-radius: 3px;
+    width: 600px;
+    margin-left: 20px;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index:100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    background: #29f700;
+}
+.navbar-brand{
+    font-size: 30px;
+    font-weight: 800;
+    color: greenyellow;
+    margin-right: 150px;
+}
+.navbar-nav > li{
+    margin-left:10px;
+    margin-right:1px;
+  }
+.navbarSupportedContent a{
+    color: aliceblue;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid #29f700;
+}
+#navbarSupportedContent button{
+    background: #29f700;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 15px;
+    margin-right:10px;
+}
+
+  .img-fluid {
+    max-width: 6%;
+    height: auto;
+    margin-right: 28px;
+  }
+
+
+
+
+
+  
+
+
+

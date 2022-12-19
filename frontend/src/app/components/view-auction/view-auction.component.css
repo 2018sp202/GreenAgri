@@ -1,0 +1,94 @@
+.example-container {
+    width: 80%;
+    height: 100%;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    
+    
+  }
+  
+  body{
+    background-image:url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/17d37af3-dcc5-44fe-954d-6d43e0b9daac/d3eovhx-7b7af2fb-d7c3-4e9e-9f7d-35a93aa20528.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE3ZDM3YWYzLWRjYzUtNDRmZS05NTRkLTZkNDNlMGI5ZGFhY1wvZDNlb3ZoeC03YjdhZjJmYi1kN2MzLTRlOWUtOWY3ZC0zNWE5M2FhMjA1MjgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Md7gq99H4T_kclEQCn6KY9UuiDnAss-GFBqotxmfD5A');
+   background-size: 100%;
+    background-size: cover;
+    height: 86%;
+    background-size: 100%;
+    background-position: top center;
+  }
+  .mat-drawer-container {
+   background-color:  rgb(255 255 255 / 30%);
+  }
+  .mat-drawer {
+    background-color: rgb(0 0 0 / 50%);
+    color: #fff;
+  }
+  .mat-icon {
+    color:#e9ecef;
+  }
+  .mat-sidenav a:hover{
+    color: chartreuse;
+  }
+ 
+ 
+  
+  .txt{
+    margin-left: 50px;
+  }
+  .img-fluid {
+    max-width: 35%;
+    height: auto;
+    margin-left: 42px;
+  }
+  .container{   
+    margin: auto;
+}
+.page-top{
+    margin-top: -712px;
+    
+}
+
+.pagination {
+    margin-left: 70%;
+    margin-top:10px;
+    position: relative;
+}
+
+thead {
+    background-color: whitesmoke;
+    color: white;
+  } 
+  .form-control {
+    border-radius: 3px;
+    width: 360px;
+    margin-left: 20px;
+    
+}
+.table > :not(caption) > * > * {
+    background-color: #07884c;;
+    padding: 0.5;
+    width: 10%;
+    
+    
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    --bs-table-accent-bg: rgba(17, 15, 15, 0.7);
+    color: var(--bs-table-striped-color);
+    
+}
+
+.ngx-pagination .disabled {
+    padding: 0.1875rem 0.625rem;
+    color: black;
+    cursor: default;
+}
+.ic{
+    height: 40px;
+    width: 40px;
+}
+.mat-drawer-content {
+    position: relative;
+    z-index: 1;
+    display: block;
+    height: 103%;
+    overflow: auto;
+}
